@@ -80,7 +80,7 @@ const render = () => {
     .map((item) => {
       return `
       <div class="row news">
-          <div class="col-lg-4">
+          <div class="col-lg-4 img-location">
             <img class="news-img-size" src="${item.media}" alt="">
           </div>
           <div class="col-lg-8">
