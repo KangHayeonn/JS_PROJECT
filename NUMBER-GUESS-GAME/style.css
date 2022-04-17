@@ -1,0 +1,90 @@
+body {
+    margin: 0; /* 기본이 8px이 들어가 있음 */
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgb(244, 233, 175);
+    width: 370px;
+    min-height: 40vh; /* vh: 내가 보는 화면의 높이만큼 */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius : 3%;
+
+    /* Center Layout */
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .container {
+      width: 370px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      width: 550px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title { 
+    margin-bottom: 2rem;
+}
+
+.input-form {
+    margin-top: 1rem;
+}
+
+#user-input {
+    border: 1px solid rgb(176, 179, 180);
+}
+
+#play-button {
+    background-color: skyblue;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 10%;
+}
+
+#play-button:hover {
+    background-color: rgb(179, 200, 208);
+    color: white;
+    border: 1px solid rgb(179, 200, 208);
+    border-radius: 10%;
+}
+
+#play-button:disabled {
+    background-color: rgb(179, 200, 208);
+    border: 1px solid rgb(179, 200, 208);
+}
+
+#reset-button {
+    background-color: skyblue;
+    color: white;
+    border: 1px solid skyblue;
+    border-radius: 10%;
+}
+
+#reset-button:hover {
+    background-color: rgb(179, 200, 208);
+    color: white;
+    border: 1px solid rgb(179, 200, 208);
+    border-radius: 10%;
+}

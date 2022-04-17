@@ -45,7 +45,7 @@ function play() {
   }
 
   chance--;
-  chanceArea.textContent = `남은기회:${chance}번`;
+  chanceArea.textContent = `남은기회 : ${chance}번`;
   console.log(chance);
 
   if (userValue < computerNum) {
@@ -75,5 +75,10 @@ function reset() {
   // 새로운 번호가 생성되고
   pickRandomNum();
   resultArea.textContent = "결과값이 여기 나옵니다!";
+  chanceArea.textContent = "남은기회 : 5번";
+  chance = 5;
+  gameOver = false;
+  history = [];
+  playButton.disabled = false;
 }
 pickRandomNum();
